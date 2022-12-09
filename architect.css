@@ -65,7 +65,7 @@ li{
     letter-spacing: 4px;
     margin: 0 5px;
     position: relative;
-    margin-top: 46px;
+    margin-top: 30px;
     padding-top: 50%; /* ảnh thích nghi với trình duyệt không bị vỡ ảnh */
     background: url('./img/architect_637901239700642222.jpg') no-repeat top center / cover;
 }
