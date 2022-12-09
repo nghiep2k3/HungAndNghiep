@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="architect.css">
+        <!-- <link rel="stylesheet" href="./asset/js/index.js"> -->
+        <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.min.css">
+        <link rel="stylesheet" href="./responsive.css">
+        <title>Architect</title>
+        <link rel="icon" href="https://noithatxinh.net.vn/wp-content/uploads/anh-nha-dep-xe-sang.jpg">
+        <script src="./js/index.js"></script>
+
+    </head>
+
+
+
+
+
+    <body id = "id_body">
+            <!-- Send Message -->
+
+        <div id="box_result" class = "mess_successful"  >
+            <div class = "mess_successful_2">
+
+                <p id = "text_click">
+                    
+                </p>
+                
+                <br>
+                <button onclick = display_none() id = "exit_box">Oke</button>
+            </div>
+        </div>
+
+        <!-- Đăng ký  -->
+        <div class="modal_body_max_1" id = "id_modal_body_max">
+            <div class="modal_body" id = "id_modalBody">
+
+                    <!-- <a class = "modal_sign_in_in_sign_up"href="">Đăng Nhập</a> -->
+
+                <span >
+                    <i onclick  = come_out() class="fa-solid fa-x " id = "mark_exit"></i>
+
+                </span>
+                <div class="authen_container">
+
+                    <!-- <a class = "modal_signUp "  href="./form.html" target="_blank" rel="noopener noreferrer">Đăng nhập</a> -->
+
+                </div>  
+                <div class = "authen_box">
+
+                    <form action="" class = "authen_form_submit">
+    
+                        <div class="authen__form">
+        
+                            
+                                <div class="auth_group">
+                                    <input type="text" class="auth_input" placeholder = "Nhập số điện thoại :">
+                                </div>
+            
+                                <div class="auth_group">
+                                    <input type="text" class="auth_input" placeholder = "Nhập Email :">
+                                </div>
+            
+                                <div class="auth_group">
+                                    <input type="password" class="auth_input" placeholder = "Nhập Password :">
+                                </div>
+    
+                                
+                                <div class="auth__outside">
+                            
+                                    <p class="auth__policy-text">Bằng việc chấp nhận chính sách của
+                                        <a style = "color : red ;text-decoration: none;" href="" class="auth__link-shoppe">BR Architects</a> và điều khoản bảo mật 
+                                    </p>    
+                                </div>
+
+                                <div class="auth__btn">
+                                    <form action="" class="">
+                                        <button  type = "button" onclick =  come_out()  class="btn__come_out btn_out_and_sign_up" id = "id_comeout">Trở lại</button>
+                                    </form>
+                                    <form action="">
+        
+                                        <button type = "button" onclick = "display_signin_in_sign_up()" class="btn__sign_up btn_out_and_sign_up" >Đăng ký</button>
+                                    </form>
+        
+                                </div>
+
+                                <div class="authen_social">
+
+                                    <div class="social_GG">
+
+                                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <span class = "text_social">
+                                            Google
+                                        </span>
+                                    </div>
+
+                                    <div class="social_FB">
+                                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-google"></i>
+                                        </a>
+                                        <span class = "text_social">Facebook</span>
+                                    </div>
+                                </div>
+                        </div>
+    
+                    </form>
+                </div>
+
+                
+
+    
+            </div>
+        </div>
+
+
+        Đăng Nhập
+
+        <!-- Đăng nhập -->
+        <div class="modal_body_dang_nhap_max" id = "id_modal_body_max_1">
+            <div class="modal_body_dang_nhap_1" id = "id_modalBody_1">
+
+                <span >
+                    <i onclick  = come_out_sign_in() class="fa-solid fa-x " id = "mark_exit"></i>
+                </span>
+                <div class="authen_container">
+
+                    <!-- <a class = "modal_signUp "  href="./form.html" target="_blank" rel="noopener noreferrer">Đăng nhập</a> -->
+
+                </div>  
+                <div class = "authen_box">
+
+                    <form action="" class = "authen_form_submit">
+    
+                        <div class="authen__form">
+        
+                            
+                                <div class="auth_group">
+                                    <input type="text" class="auth_input" placeholder = "Nhập số điện thoại :">
+                                </div>
+            
+                                <div class="auth_group">
+                                    <input type="text" class="auth_input" placeholder = "Nhập Email :">
+                                </div>
+            
+                                <div class="auth_group">
+                                    <input type="password" class="auth_input" placeholder = "Nhập Password :">
+                                </div>
+    
+                                
+                                <div class="auth__outside">
+                            
+                                    <p class="auth__policy-text">Bằng việc chấp nhận chính sách của
+                                        <a style = "color : red ;text-decoration: none;" href="" class="auth__link-shoppe">BR Architects</a> và điều khoản bảo mật 
+                                    </p>    
+                                </div>
+
+                                <div class="auth__btn">
+                                    <form action="" class="">
+                                        <button  type ="button" onclick = comeback_sign_up()  class="btn__come_out btn_out_and_sign_up" id = "id_comeout">Trở lại</button>
+                                    </form>
+                                    <form action="">
+        
+                                        <button class="btn__sign_up btn_out_and_sign_up" >Đăng Nhập</button>
+                                    </form>
+        
+                                </div>
+
+                                <div class="authen_social">
+
+                                    <div class="social_GG">
+
+                                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <span class = "text_social">
+                                            Google
+                                        </span>
+                                    </div>
+
+                                    <div class="social_FB">
+                                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-google"></i>
+                                        </a>
+                                        <span class = "text_social">Facebook</span>
+                                    </div>
+                                </div>
+                        </div>
+    
+                    </form>
+                </div>
+
+                
+
+    
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="header">
+                <div class="header-left">
+                    <a href="#">
+                        <b>BR</b> Architects
+                    </a>
+                </div>
+
+                <div id="mobileBGR" class="header-right">
+                    <ul class="header-right-ul">
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div id="mobile-menu" class="moblie-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+            </div>
+            
+
+            <div id="slider">
+                <div class="text-content">
+                    <div class="text-heading">BR</div> 
+                    Architects
+                </div>
+            </div>
+
+            <div id="projects">
+                <h2>Projects</h2>
+            </div>
+        </div>
+
+        <div class="body">
+
+            <!-- Thể loại nhà  -->
+            <div class="house_category">
+
+                <div class="house"> 
+                    <!-- Cho chữ vào trong div , khi mà position vào thì nó
+                         phụ thuộc vào cái div to kia luôn
+                     -->
+                    <div class = "Text_house">
+                        Summer House
+                    </div>
+
+                    <img class = "img_house " src="./img/summer_house.jpg" alt="">
+                </div>
+
+                <div class="house">
+                    <div class = "Text_house">
+                        Brick House
+                    </div>
+
+                    <img class = "img_house "  src="./img/brick_house.jpg" alt="">
+                </div>
+
+                <div class="house">
+                    <div class = "Text_house">
+                       Renovated
+                    </div>
+
+                    <img class = "img_house " src="./img/renovated.jpg" alt="">
+                </div>
+
+                <div class="house">
+                    <div class = "Text_house">
+                        Barn House
+                    </div>
+
+                    <img class = "img_house " src="./img/barn_house.jpg" alt="">
+                </div>
+
+                <div class="house">
+                    <div class = "Text_house">
+                        Summer House
+                    </div>
+
+                    <img class = "img_house " src="./img/summer_house_1.jpg" alt="">
+                </div>
+
+                <div class="house">
+                    <div class = "Text_house">
+                        Summer House
+                    </div>
+
+                    <img class = "img_house "  src="./img/brick_house_1.jpg" alt="">
+                </div>
+                <div class="house">
+                    <div class = "Text_house">
+                        Summer House
+                    </div>
+
+                    <img class = "img_house " src="./img/renovated_1.jpg" alt="">
+                </div>
+
+                <div class="house">
+                    <div class = "Text_house">
+                        Summer House
+                    </div>
+
+                    <img class = "img_house " src="./img/barn_house_1.jpg" alt="">
+                </div>
+
+            </div>
+
+
+            <!-- About -->
+
+            <div class="about">
+                <div class="title_about">
+                    <h2 id ="about">About</h2>
+                </div>
+                <div class="des_about">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="Member">
+
+                <div class="name_member">
+                    <img class = "img_member" src="./img/John.jpg" alt="">
+                    <div class = "Text_member">
+                        <h3 class = "h3_name">John Doe</h3>
+                        <p>CEO & Founder</p>
+                        <p >Phasellus eget enim eu lectus faucibus vestibulum. 
+                        Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+
+                    <div class="contact_member">
+                        <button class = "btn_contact">Contact</button>
+                    </div>
+                </div>
+
+                <div class="name_member">
+                    <img class = "img_member" src="./img/Jane.jpg" alt="">
+                    <div class = "Text_member">
+                        <h3 class = "h3_name">John Doe</h3>
+                        <p>Architect</p>
+                        <p >Phasellus eget enim eu lectus faucibus vestibulum. 
+                            Suspendisse sodales pellentesque elementum.</p>
+
+                        <div class="contact_member">
+                            <button class = "btn_contact">Contact</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="name_member">
+                    <img class = "img_member" src="./img/MIke.jpg" alt="">
+                    <div class = "Text_member">
+                        <h3 class = "h3_name">John Doe</h3>
+                        <p>Architect</p>
+                        <p >Phasellus eget enim eu lectus faucibus vestibulum. 
+                        Suspendisse sodales pellentesque elementum.</p>
+                        <div class="contact_member">
+                            <button class = "btn_contact">Contact</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="name_member">
+                    <img class = "img_member" src="./img/Dan.jpg" alt="">
+                    <div class = "Text_member">
+                        <h3 class = "h3_name">John Doe</h3>
+                        <p>Architect</p>
+                        <p >Phasellus eget enim eu lectus faucibus vestibulum.
+                             Suspendisse sodales pellentesque elementum.</p>
+                        <div class="contact_member">
+                            <button class = "btn_contact">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Đây là phần Form contact  -->
+            
+            <div class="Form_contact">
+
+                <div class="title_contact">
+                    <h3 id ="contact">Contact</h3>
+                </div>
+
+                <div class="form_contact-input">
+                    <form action="" method = "">
+                        <div class="form_name">
+                            <input class = "form_input" placeholder="Name" type="text" name = "name" id = "id_name">
+                        </div>
+    
+                        <div class="form_email">
+                            <input class = "form_input" placeholder="Email" type="text" name = "email" id = "id_email">
+                        </div>
+    
+                        <div class="form_subject">
+                            <input class = "form_input" placeholder = "Subject" type="text" name = "subject" id = "id_subject">
+                        </div>
+    
+                        <div class="form_comment">
+                            <input class = "form_input" placeholder="Comment" type="text" name = "comment" id = "id_comment">
+                        </div>
+                            <button onclick = display_mess()  class = "submit_form" type = "button" name = "submit" id = "id_comment"> Send Message</button>
+                    </form>
+                </div>
+
+                    <!-- <div id="box_result" class = "mess_successful"  >
+                        <span id = "text_click"></span><br>
+                        <button onclick = display_none()  id = "exit_box">Oke</button>
+                    </div> -->
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
+            <!-- Là phần body  -->
+
+
+
+        </div>
+
+
+        <div class="footer">
+            <div class="login_footer_big">
+
+                <div class="text_footer">
+                        <h1 class = "">Bắt đầu mua nhà ngay hôm nay </h1>
+                </div>
+
+                <div class = "form_sign_in">
+                    <button onclick = display_signIn() class = "sign_in_now" id = "sign_in">
+                        Đăng ký ngay
+                    </button>
+
+ 
+
+
+                </div>
+
+
+ 
+            </div>
+
+            <div class="information_footer">
+
+                <div class="about_us_footer">
+                    <h3 class = "title_footer">Về chúng tôi</h3>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Thông tin thêm</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Cơ hội nghề nghiệp</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Cộng đồng</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Tin tức</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Notices</a>
+    
+                </div>
+    
+    
+                <div class="product_footer">
+                    <h3 class = "title_footer">Sản phẩm</h3>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Summer House</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Brick House</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Renovated</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Barn House</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">House</a>
+                </div>
+    
+                <div class="service_footer">
+                    <h3 class = "title_footer">Dịch Vụ</h3>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Tải xuống</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Giới thiệu</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Giao dịch</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Dịch Vụ</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Ứng dụng</a>
+                </div>
+
+
+                <div class="support_footer">
+                    <h3 class = "title_footer">Hỗ trợ</h3>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Phản hồi</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Trung tâm trợ giúp </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Phí giao dịch</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Quy tắc giao dịch</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Xác minh</a>
+                </div>  
+
+
+
+                <div class="community_footer">
+                    <h3 class = "title_footer">Community</h3>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                        Facebook
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class=" fab fa-facebook-messenger"></i>
+                        Messenger
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                        Instagram
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-tiktok"></i>
+                        Tiktok
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var header = document.getElementById('header');
+            var mobileMenu = document.getElementById('mobile-menu');
+            var headerHeight = header.clientHeight;
+            mobileMenu.onclick = function(){
+                var close = header.clientHeight === headerHeight;
+                if(close){
+                    header.style.height = 'auto';
+                    header.style.background = '#C6E2FF'
+                }
+                else{
+                    header.style.height = null;
+                    header.style.background = null
+                }
+            }
+
+
+            var menuItems = document.querySelectorAll('.header-right .header-right-ul li a[href*="#"]'); // trả về 3 thẻ a có href #
+            for(var i = 0; i<menuItems.length; i++){
+                var menuItem = menuItems[i];
+
+                menuItem.onclick = function(){
+                    header.style.height = null;
+                    header.style.background = null
+                }
+            }
+
+        </script>
+    </body>
+</html>
+

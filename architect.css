@@ -1,0 +1,608 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: content-box; */
+}
+
+body{
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+li{
+    list-style-type: none;
+}
+#wrapper{
+    width: 100%;
+    /* height: 2000px;x */
+}
+
+#header{
+    z-index: 1;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    height: 50px;
+    display: flex;
+    background-color:#DCDCDC;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .header-left a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#header .header-right .header-right-ul li{
+    font-size: 20px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+
+.header-right .header-right-ul>li>a{
+    padding: 0 20px;
+    display: inline-block;
+    line-height: 40px;
+}
+
+.header-right .header-right-ul>li>a:hover{
+    color: yellow;
+    background-color:#197a29;
+}
+
+.header-right .header-right-ul a{
+    text-decoration: none;
+}
+
+#slider{
+    letter-spacing: 4px;
+    margin: 0 5px;
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%; /* ảnh thích nghi với trình duyệt không bị vỡ ảnh */
+    background: url('./img/architect_637901239700642222.jpg') no-repeat top center / cover;
+}
+
+.text-content{
+    margin: auto;
+    color: white;
+    top: 300px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+
+#slider .text-heading{
+    opacity: 0.7;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    align-items: center;
+}
+
+
+
+#projects h2{
+    margin: 0 32px;
+    box-sizing: inherit;
+    padding: 32px 0;
+
+}
+
+
+
+/* Css phần Body */
+
+.house_category
+{
+    display : flex ;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+
+}
+
+.img_house
+{
+    width : 330px ;
+    /* height : 230px; */
+}
+
+.house
+{
+    position: relative;
+}
+.Text_house
+{
+    position: absolute;
+    background-color: black;
+    color : white;
+    padding:12px;
+}
+
+
+/* Đây là phần body -About */
+
+.about
+{
+    margin : 50px 0 ;
+    padding :0 32px;
+}
+
+
+.des_about
+{
+    text-align: justify;
+    margin-top : 16px;
+    border-top : 1px solid #f1f1f1 ;
+    padding-top :16px; 
+}
+
+
+/* Đây là phần thành viên -member */
+.Member
+{
+    flex-wrap: wrap;
+    display: flex ;
+    justify-content: space-evenly;
+}
+
+.name_member
+{
+    
+}
+
+.img_member
+{
+    width : 330px ;
+
+}
+
+
+/* Set nó cái div này = cái ảnh thì chữ sẽ chỉ đến cái ảnh thì dừng  */
+.Text_member
+{
+    width : 330px;
+}
+
+
+/* Contact  */
+
+.btn_contact
+{   
+    width : 330px;
+    padding:10px;
+    margin-top : 20px;
+    background-color: #f1f1f1;
+    border : none ;
+}
+
+.btn_contact:hover 
+{
+    cursor: pointer;
+    background-color: #976969 ;
+}
+
+p+p
+{
+    margin-top : 15px;
+}
+.h3_name
+{
+    margin: 15px 0 ;
+}
+
+
+/* Form contact  */
+
+.Form_contact 
+{
+    margin : 50px 0 ;
+    padding :0 32px;
+    position: relative;
+}
+
+.title_contact
+{
+    margin-bottom : 32px;
+}
+
+.form_input
+{
+    width : 100%;
+    height : 40px;
+    margin-top : 20px;
+    font-size : 16px;
+    padding-left: 10px;
+    box-sizing: padding-box;
+    border-radius: 5px;
+}
+
+.mess_successful
+{
+    background-color: rgba(227, 208, 236, 0.4); 
+    width : 100vw;
+    height : 100vh;
+    position: fixed;
+    top : 0 ;
+    left : 0 ;
+    z-index: 300;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+
+    
+} 
+.mess_successful_2
+{
+
+    width : 397px ;
+    height : 481px ;
+    z-index: 200;
+    background-color: white;
+    /* display : none ; */
+    border-radius: 10px;
+} 
+
+#exit_box
+{
+    margin-top: 220px;
+    margin-left : 140px;
+    padding: 10px 40px;
+}
+
+.submit_form 
+{
+    margin-top : 20px;
+    background-color: rgb(227, 153, 153) ;
+    color : black ;
+    padding : 15px;
+    border-radius: 5px ;
+    border : 2px solid rgb(182, 129, 129);
+}
+
+.submit_form:hover
+{
+    cursor: pointer;
+    background-color: #1f197a;
+}
+
+
+
+/* CSs footer  */
+
+.login_footer_big
+{
+    display : flex ;
+    flex-direction: column;
+}
+.login_footer
+{
+    margin:auto;
+}
+
+.text_footer
+{
+    margin:auto;
+
+}
+
+.btn_login
+{
+    /* margin-top : px; */
+    padding: 16px 40px;
+    border-radius: 5px;
+    background-color: #1bed3e;
+    border-color: white;
+}
+.login_footer_big
+{
+    background-image: linear-gradient(135deg, #492cdd 0%, #ad38e2 100%);
+    height : 300px;
+}
+
+.information_footer
+{
+    display : flex ;
+    justify-content: space-evenly;
+    margin: 100px 0;
+
+}
+
+
+.modal_body_max_1
+{
+    /* background-color: rgb(0,0,0); */
+    background-color: rgba(227, 208, 236, 0.4); 
+    width : 100vw;
+    height : 100vh;
+    position: fixed;
+    top : 0 ;
+    left : 0 ;
+    z-index: 300;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+
+
+.modal_body
+{
+    width : 397px ;
+    height : 481px ;
+    z-index: 200;
+    /* display: none; */
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.modal_body_dang_nhap_max
+{
+    background-color: rgba(227, 208, 236, 0.4); 
+    width : 100vw;
+    height : 100vh;
+    position: fixed;
+    top : 0 ;
+    left : 0 ;
+    z-index: 300;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal_body_dang_nhap_1
+{
+    width : 397px ;
+    height : 481px ;
+    z-index: 200;
+    /* display: none; */
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.modal_sign_in_in_sign_up
+{
+    /* padding-left : 16px; */
+    font-size: 20px;
+    /* margin-top : 50px; */
+}
+
+/* .auth_input
+{
+    border-radius: 20px;
+} */
+
+/* .sign_in_now:hover .modal_body
+{
+    display : block ;
+} */
+
+.sign_in_now
+{
+    cursor: pointer;
+}
+.form_sign_in
+{
+    
+    display: flex;
+    margin: auto;
+
+}
+
+
+#mark_exit
+{
+    padding-top : 12px;
+    float : right ;
+    padding-right : 20px;
+    /* margin-bottom : 40px; */
+    font-size: 20px;
+}
+
+#mark_exit:hover
+{
+    cursor: pointer;
+}
+
+.sign_in_now{
+    border: 2px solid red;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+.authen__form
+{
+    display: flex;
+    flex-direction: column;
+    margin-left : 15px;
+}
+
+.auth__policy
+{
+    text-align: center;
+}
+
+.auth_input
+{
+    width : 340px;  
+    font-size : 18px;
+    height :40px;
+    margin-top : 20px;
+    border-radius: 5px;
+    padding-left : 20px;
+}
+
+/*  */
+
+.auth__policy-text
+{
+    text-align: center;
+}
+
+.auth__btn
+{
+    display : flex ;
+    justify-content: flex-end   ;
+    /* width : 100px; */
+    /* margin-left : 50px; */
+}
+
+.btn_out_and_sign_up
+{
+    margin-right : 20px;
+    border : none ;
+    /* border-radius: 5px; */
+}
+
+.modal_signUp
+{
+    
+    color : black ;
+    font-weight: 600;
+    font-size: 18px;
+
+}   
+
+.authen_container
+{
+    margin : 20px 0 0 15px;
+}
+.auth__outside
+{
+    margin-top: 20px;
+}
+
+.auth__link-shoppe
+{
+    text-align: center;
+}
+.auth__btn
+{
+    margin-top: 20px;
+    margin-right: -36px;
+}
+
+
+.btn_out_and_sign_up
+{
+    padding : 10px 30px;
+    border-radius: 5px;
+}
+
+.authen_form_submit
+{
+    margin-right : 18px;
+}
+
+
+.btn__come_out
+{
+    background-color: rgb(205, 205, 227);
+
+}
+.btn__sign_up
+{
+    background-color: #1bed3e;
+}
+
+.btn__come_out:hover , .btn__sign_up:hover 
+{
+    cursor: pointer;
+}
+
+
+.authen_social
+{
+    display : flex ;
+    justify-content: space-around;
+    margin-top : 30px;
+    background-color: rgb(235, 205, 220);;
+    padding: 12px;
+    /* opacity: 0.5; */
+    border-radius: 5px;
+    margin-right : -14px
+}
+
+.social_GG
+{
+    background-color: #e9f5eb;
+    padding: 8px 48px;
+    /* width : 80px; */
+    border-radius: 5px;
+
+}
+
+.social_FB
+{
+    background-color: #352dab;
+    padding: 8px 48px;
+    border-radius: 5px;
+
+
+}
+
+.text_social
+{
+
+    cursor: pointer;
+}
+.footer
+{
+    position: relative;
+    
+}
+
+
+
+
+
+
+/* Cho các cột chữ dọc lại */
+.about_us_footer ,.product_footer ,.community_footer ,.service_footer,.support_footer
+{
+
+    flex-direction: column;
+    display: flex;
+
+}
+
+.title_footer
+{
+    margin-bottom : 16px;
+}
+
+
+a
+{
+    text-decoration: none;
+    color : black;
+    opacity: 0.7;
+}
+
+a+a 
+{
+    margin-top : 16px;
+}
+
+.information_footer a:hover
+{
+    color : rgb(227, 160, 160) ;
+}
+
+
+
+
