@@ -21,13 +21,9 @@ function display_mess()
 
 } 
 
-function display_none()
-{
+function display_none(){
     var result_box = document.getElementById("box_result");
     result_box.style.display ="none";
-    
-    
-    
 }
 
 
